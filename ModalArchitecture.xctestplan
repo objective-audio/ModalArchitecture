@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "AC02CD44-C540-461A-A79E-8C08CBB8BEFE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ModalArchitecture.xcodeproj",
+      "identifier" : "B6E00C2B2A45E97C003A7BB7",
+      "name" : "ModalArchitecture"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ModalArchitecture.xcodeproj",
+        "identifier" : "B6343C9B2A501C73008E077F",
+        "name" : "ModalArchitectureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

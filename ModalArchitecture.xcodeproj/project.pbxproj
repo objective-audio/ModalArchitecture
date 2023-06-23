@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B62277072A5D883D004D0ABC /* TickWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62277062A5D883D004D0ABC /* TickWaiter.swift */; };
+		B6343C9F2A501C73008E077F /* ModalNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6343C9E2A501C73008E077F /* ModalNodeTests.swift */; };
+		B6343CAB2A50D6CD008E077F /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6343CAA2A50D6CD008E077F /* SwapView.swift */; };
+		B69C4A452A6BFC6400D568F8 /* ModalReserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69C4A442A6BFC6400D568F8 /* ModalReserved.swift */; };
+		B69C4A472A6BFD3D00D568F8 /* ModalNodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69C4A462A6BFD3D00D568F8 /* ModalNodeState.swift */; };
+		B6A73E7B2A5A4E6800E7FACD /* Sleeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A73E7A2A5A4E6800E7FACD /* Sleeper.swift */; };
+		B6BE8D2E2A55A84C0036CC76 /* DidAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE8D2D2A55A84C0036CC76 /* DidAppearModifier.swift */; };
+		B6D1AC462A56E20C008E6444 /* ModalDialog.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC452A56E20C008E6444 /* ModalDialog.swift.swift */; };
+		B6D1AC482A56F0ED008E6444 /* EmptyTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC472A56F0ED008E6444 /* EmptyTarget.swift */; };
+		B6D1AC4E2A56FF23008E6444 /* TransitionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC4D2A56FF23008E6444 /* TransitionDialog.swift */; };
+		B6D1AC502A57005A008E6444 /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC4F2A57005A008E6444 /* AlertModifier.swift */; };
+		B6D1AC522A57036F008E6444 /* ConfirmationDialogModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC512A57036F008E6444 /* ConfirmationDialogModifier.swift */; };
+		B6D1AC6E2A58D348008E6444 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC6D2A58D348008E6444 /* Once.swift */; };
+		B6D1AC702A590F91008E6444 /* TransitionPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1AC6F2A590F91008E6444 /* TransitionPopover.swift */; };
+		B6E00C302A45E97C003A7BB7 /* ModalArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C2F2A45E97C003A7BB7 /* ModalArchitectureApp.swift */; };
+		B6E00C342A45E97D003A7BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E00C332A45E97D003A7BB7 /* Assets.xcassets */; };
+		B6E00C372A45E97D003A7BB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E00C362A45E97D003A7BB7 /* Preview Assets.xcassets */; };
+		B6E00C5F2A45E9E1003A7BB7 /* TransitionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C402A45E9E1003A7BB7 /* TransitionPresenter.swift */; };
+		B6E00C602A45E9E1003A7BB7 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C412A45E9E1003A7BB7 /* TransitionView.swift */; };
+		B6E00C642A45E9E1003A7BB7 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C472A45E9E1003A7BB7 /* FirstView.swift */; };
+		B6E00C652A45E9E1003A7BB7 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C482A45E9E1003A7BB7 /* FirstPresenter.swift */; };
+		B6E00C662A45E9E1003A7BB7 /* FirstContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C492A45E9E1003A7BB7 /* FirstContent.swift */; };
+		B6E00C672A45E9E1003A7BB7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C4B2A45E9E1003A7BB7 /* SecondView.swift */; };
+		B6E00C682A45E9E1003A7BB7 /* SecondContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C4C2A45E9E1003A7BB7 /* SecondContent.swift */; };
+		B6E00C692A45E9E1003A7BB7 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C4D2A45E9E1003A7BB7 /* SecondPresenter.swift */; };
+		B6E00C6A2A45E9E1003A7BB7 /* RootContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C4F2A45E9E1003A7BB7 /* RootContent.swift */; };
+		B6E00C6B2A45E9E1003A7BB7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C502A45E9E1003A7BB7 /* RootView.swift */; };
+		B6E00C6C2A45E9E1003A7BB7 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C512A45E9E1003A7BB7 /* RootPresenter.swift */; };
+		B6E00C6D2A45E9E1003A7BB7 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C532A45E9E1003A7BB7 /* EndView.swift */; };
+		B6E00C6E2A45E9E1003A7BB7 /* EndContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C542A45E9E1003A7BB7 /* EndContent.swift */; };
+		B6E00C6F2A45E9E1003A7BB7 /* EndPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C552A45E9E1003A7BB7 /* EndPresenter.swift */; };
+		B6E00C702A45E9E1003A7BB7 /* EmptyChildContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C572A45E9E1003A7BB7 /* EmptyChildContent.swift */; };
+		B6E00C722A45E9E1003A7BB7 /* ModalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C592A45E9E1003A7BB7 /* ModalId.swift */; };
+		B6E00C732A45E9E1003A7BB7 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C5A2A45E9E1003A7BB7 /* Modal.swift */; };
+		B6E00C742A45E9E1003A7BB7 /* ModalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C5B2A45E9E1003A7BB7 /* ModalNode.swift */; };
+		B6E00C752A45E9E1003A7BB7 /* ModalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C5C2A45E9E1003A7BB7 /* ModalProtocols.swift */; };
+		B6E00C762A45E9E1003A7BB7 /* DialogContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C5D2A45E9E1003A7BB7 /* DialogContent.swift */; };
+		B6E00C772A45E9E1003A7BB7 /* EmptyParentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E00C5E2A45E9E1003A7BB7 /* EmptyParentNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6343CA02A501C73008E077F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E00C242A45E97C003A7BB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E00C2B2A45E97C003A7BB7;
+			remoteInfo = ModalArchitecture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B62277062A5D883D004D0ABC /* TickWaiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickWaiter.swift; sourceTree = "<group>"; };
+		B6343C9C2A501C73008E077F /* ModalArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6343C9E2A501C73008E077F /* ModalNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNodeTests.swift; sourceTree = "<group>"; };
+		B6343CA52A5027D1008E077F /* ModalArchitecture.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModalArchitecture.xctestplan; sourceTree = "<group>"; };
+		B6343CAA2A50D6CD008E077F /* SwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
+		B69C4A442A6BFC6400D568F8 /* ModalReserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalReserved.swift; sourceTree = "<group>"; };
+		B69C4A462A6BFD3D00D568F8 /* ModalNodeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNodeState.swift; sourceTree = "<group>"; };
+		B6A73E7A2A5A4E6800E7FACD /* Sleeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleeper.swift; sourceTree = "<group>"; };
+		B6BE8D2D2A55A84C0036CC76 /* DidAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidAppearModifier.swift; sourceTree = "<group>"; };
+		B6D1AC452A56E20C008E6444 /* ModalDialog.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDialog.swift.swift; sourceTree = "<group>"; };
+		B6D1AC472A56F0ED008E6444 /* EmptyTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTarget.swift; sourceTree = "<group>"; };
+		B6D1AC4D2A56FF23008E6444 /* TransitionDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDialog.swift; sourceTree = "<group>"; };
+		B6D1AC4F2A57005A008E6444 /* AlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModifier.swift; sourceTree = "<group>"; };
+		B6D1AC512A57036F008E6444 /* ConfirmationDialogModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogModifier.swift; sourceTree = "<group>"; };
+		B6D1AC6D2A58D348008E6444 /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
+		B6D1AC6F2A590F91008E6444 /* TransitionPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPopover.swift; sourceTree = "<group>"; };
+		B6E00C2C2A45E97C003A7BB7 /* ModalArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E00C2F2A45E97C003A7BB7 /* ModalArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalArchitectureApp.swift; sourceTree = "<group>"; };
+		B6E00C332A45E97D003A7BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6E00C362A45E97D003A7BB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6E00C402A45E9E1003A7BB7 /* TransitionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresenter.swift; sourceTree = "<group>"; };
+		B6E00C412A45E9E1003A7BB7 /* TransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+		B6E00C472A45E9E1003A7BB7 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B6E00C482A45E9E1003A7BB7 /* FirstPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		B6E00C492A45E9E1003A7BB7 /* FirstContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstContent.swift; sourceTree = "<group>"; };
+		B6E00C4B2A45E9E1003A7BB7 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		B6E00C4C2A45E9E1003A7BB7 /* SecondContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondContent.swift; sourceTree = "<group>"; };
+		B6E00C4D2A45E9E1003A7BB7 /* SecondPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		B6E00C4F2A45E9E1003A7BB7 /* RootContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContent.swift; sourceTree = "<group>"; };
+		B6E00C502A45E9E1003A7BB7 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B6E00C512A45E9E1003A7BB7 /* RootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		B6E00C532A45E9E1003A7BB7 /* EndView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		B6E00C542A45E9E1003A7BB7 /* EndContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndContent.swift; sourceTree = "<group>"; };
+		B6E00C552A45E9E1003A7BB7 /* EndPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPresenter.swift; sourceTree = "<group>"; };
+		B6E00C572A45E9E1003A7BB7 /* EmptyChildContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyChildContent.swift; sourceTree = "<group>"; };
+		B6E00C592A45E9E1003A7BB7 /* ModalId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalId.swift; sourceTree = "<group>"; };
+		B6E00C5A2A45E9E1003A7BB7 /* Modal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		B6E00C5B2A45E9E1003A7BB7 /* ModalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNode.swift; sourceTree = "<group>"; };
+		B6E00C5C2A45E9E1003A7BB7 /* ModalProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalProtocols.swift; sourceTree = "<group>"; };
+		B6E00C5D2A45E9E1003A7BB7 /* DialogContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogContent.swift; sourceTree = "<group>"; };
+		B6E00C5E2A45E9E1003A7BB7 /* EmptyParentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyParentNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6343C992A501C73008E077F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E00C292A45E97C003A7BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6343C9D2A501C73008E077F /* ModalArchitectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6343C9E2A501C73008E077F /* ModalNodeTests.swift */,
+			);
+			path = ModalArchitectureTests;
+			sourceTree = "<group>";
+		};
+		B69C4A432A6BFB0200D568F8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE8D2D2A55A84C0036CC76 /* DidAppearModifier.swift */,
+				B6D1AC6D2A58D348008E6444 /* Once.swift */,
+				B6A73E7A2A5A4E6800E7FACD /* Sleeper.swift */,
+				B6343CAA2A50D6CD008E077F /* SwapView.swift */,
+				B62277062A5D883D004D0ABC /* TickWaiter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B6E00C232A45E97C003A7BB7 = {
+			isa = PBXGroup;
+			children = (
+				B6343CA52A5027D1008E077F /* ModalArchitecture.xctestplan */,
+				B6E00C2E2A45E97C003A7BB7 /* ModalArchitecture */,
+				B6343C9D2A501C73008E077F /* ModalArchitectureTests */,
+				B6E00C2D2A45E97C003A7BB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6E00C2D2A45E97C003A7BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C2C2A45E97C003A7BB7 /* ModalArchitecture.app */,
+				B6343C9C2A501C73008E077F /* ModalArchitectureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E00C2E2A45E97C003A7BB7 /* ModalArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C2F2A45E97C003A7BB7 /* ModalArchitectureApp.swift */,
+				B6E00C562A45E9E1003A7BB7 /* Framework */,
+				B69C4A432A6BFB0200D568F8 /* Utils */,
+				B6E00C3E2A45E9E1003A7BB7 /* Contents */,
+				B6E00C332A45E97D003A7BB7 /* Assets.xcassets */,
+				B6E00C352A45E97D003A7BB7 /* Preview Content */,
+			);
+			path = ModalArchitecture;
+			sourceTree = "<group>";
+		};
+		B6E00C352A45E97D003A7BB7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C362A45E97D003A7BB7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6E00C3E2A45E9E1003A7BB7 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C4E2A45E9E1003A7BB7 /* Root */,
+				B6E00C462A45E9E1003A7BB7 /* First */,
+				B6E00C4A2A45E9E1003A7BB7 /* Second */,
+				B6E00C522A45E9E1003A7BB7 /* End */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		B6E00C462A45E9E1003A7BB7 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C492A45E9E1003A7BB7 /* FirstContent.swift */,
+				B6E00C482A45E9E1003A7BB7 /* FirstPresenter.swift */,
+				B6E00C472A45E9E1003A7BB7 /* FirstView.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		B6E00C4A2A45E9E1003A7BB7 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C4C2A45E9E1003A7BB7 /* SecondContent.swift */,
+				B6E00C4D2A45E9E1003A7BB7 /* SecondPresenter.swift */,
+				B6E00C4B2A45E9E1003A7BB7 /* SecondView.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		B6E00C4E2A45E9E1003A7BB7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C4F2A45E9E1003A7BB7 /* RootContent.swift */,
+				B6E00C512A45E9E1003A7BB7 /* RootPresenter.swift */,
+				B6E00C502A45E9E1003A7BB7 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B6E00C522A45E9E1003A7BB7 /* End */ = {
+			isa = PBXGroup;
+			children = (
+				B6E00C542A45E9E1003A7BB7 /* EndContent.swift */,
+				B6E00C552A45E9E1003A7BB7 /* EndPresenter.swift */,
+				B6E00C532A45E9E1003A7BB7 /* EndView.swift */,
+			);
+			path = End;
+			sourceTree = "<group>";
+		};
+		B6E00C562A45E9E1003A7BB7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1AC4F2A57005A008E6444 /* AlertModifier.swift */,
+				B6D1AC512A57036F008E6444 /* ConfirmationDialogModifier.swift */,
+				B6E00C5D2A45E9E1003A7BB7 /* DialogContent.swift */,
+				B6E00C572A45E9E1003A7BB7 /* EmptyChildContent.swift */,
+				B6E00C5E2A45E9E1003A7BB7 /* EmptyParentNode.swift */,
+				B6D1AC472A56F0ED008E6444 /* EmptyTarget.swift */,
+				B6E00C5A2A45E9E1003A7BB7 /* Modal.swift */,
+				B6D1AC452A56E20C008E6444 /* ModalDialog.swift.swift */,
+				B6E00C592A45E9E1003A7BB7 /* ModalId.swift */,
+				B6E00C5B2A45E9E1003A7BB7 /* ModalNode.swift */,
+				B69C4A462A6BFD3D00D568F8 /* ModalNodeState.swift */,
+				B6E00C5C2A45E9E1003A7BB7 /* ModalProtocols.swift */,
+				B69C4A442A6BFC6400D568F8 /* ModalReserved.swift */,
+				B6D1AC4D2A56FF23008E6444 /* TransitionDialog.swift */,
+				B6D1AC6F2A590F91008E6444 /* TransitionPopover.swift */,
+				B6E00C402A45E9E1003A7BB7 /* TransitionPresenter.swift */,
+				B6E00C412A45E9E1003A7BB7 /* TransitionView.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6343C9B2A501C73008E077F /* ModalArchitectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6343CA42A501C73008E077F /* Build configuration list for PBXNativeTarget "ModalArchitectureTests" */;
+			buildPhases = (
+				B6343C982A501C73008E077F /* Sources */,
+				B6343C992A501C73008E077F /* Frameworks */,
+				B6343C9A2A501C73008E077F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6343CA12A501C73008E077F /* PBXTargetDependency */,
+			);
+			name = ModalArchitectureTests;
+			productName = ModalArchitectureTests;
+			productReference = B6343C9C2A501C73008E077F /* ModalArchitectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6E00C2B2A45E97C003A7BB7 /* ModalArchitecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E00C3A2A45E97D003A7BB7 /* Build configuration list for PBXNativeTarget "ModalArchitecture" */;
+			buildPhases = (
+				B6E00C282A45E97C003A7BB7 /* Sources */,
+				B6E00C292A45E97C003A7BB7 /* Frameworks */,
+				B6E00C2A2A45E97C003A7BB7 /* Resources */,
+				B6E00C3D2A45E9AB003A7BB7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalArchitecture;
+			productName = ModalArchitecture;
+			productReference = B6E00C2C2A45E97C003A7BB7 /* ModalArchitecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6E00C242A45E97C003A7BB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B6343C9B2A501C73008E077F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B6E00C2B2A45E97C003A7BB7;
+					};
+					B6E00C2B2A45E97C003A7BB7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B6E00C272A45E97C003A7BB7 /* Build configuration list for PBXProject "ModalArchitecture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6E00C232A45E97C003A7BB7;
+			productRefGroup = B6E00C2D2A45E97C003A7BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6E00C2B2A45E97C003A7BB7 /* ModalArchitecture */,
+				B6343C9B2A501C73008E077F /* ModalArchitectureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6343C9A2A501C73008E077F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E00C2A2A45E97C003A7BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E00C372A45E97D003A7BB7 /* Preview Assets.xcassets in Resources */,
+				B6E00C342A45E97D003A7BB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6E00C3D2A45E9AB003A7BB7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=$PATH:/opt/homebrew/bin\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6343C982A501C73008E077F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6343C9F2A501C73008E077F /* ModalNodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E00C282A45E97C003A7BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E00C6C2A45E9E1003A7BB7 /* RootPresenter.swift in Sources */,
+				B62277072A5D883D004D0ABC /* TickWaiter.swift in Sources */,
+				B6E00C752A45E9E1003A7BB7 /* ModalProtocols.swift in Sources */,
+				B6D1AC702A590F91008E6444 /* TransitionPopover.swift in Sources */,
+				B6E00C742A45E9E1003A7BB7 /* ModalNode.swift in Sources */,
+				B6D1AC482A56F0ED008E6444 /* EmptyTarget.swift in Sources */,
+				B6E00C642A45E9E1003A7BB7 /* FirstView.swift in Sources */,
+				B6E00C662A45E9E1003A7BB7 /* FirstContent.swift in Sources */,
+				B6E00C302A45E97C003A7BB7 /* ModalArchitectureApp.swift in Sources */,
+				B6E00C722A45E9E1003A7BB7 /* ModalId.swift in Sources */,
+				B6D1AC462A56E20C008E6444 /* ModalDialog.swift.swift in Sources */,
+				B6E00C772A45E9E1003A7BB7 /* EmptyParentNode.swift in Sources */,
+				B6D1AC522A57036F008E6444 /* ConfirmationDialogModifier.swift in Sources */,
+				B6E00C6B2A45E9E1003A7BB7 /* RootView.swift in Sources */,
+				B6E00C6F2A45E9E1003A7BB7 /* EndPresenter.swift in Sources */,
+				B69C4A452A6BFC6400D568F8 /* ModalReserved.swift in Sources */,
+				B6E00C6A2A45E9E1003A7BB7 /* RootContent.swift in Sources */,
+				B6E00C5F2A45E9E1003A7BB7 /* TransitionPresenter.swift in Sources */,
+				B6343CAB2A50D6CD008E077F /* SwapView.swift in Sources */,
+				B6E00C732A45E9E1003A7BB7 /* Modal.swift in Sources */,
+				B6E00C672A45E9E1003A7BB7 /* SecondView.swift in Sources */,
+				B6E00C602A45E9E1003A7BB7 /* TransitionView.swift in Sources */,
+				B6BE8D2E2A55A84C0036CC76 /* DidAppearModifier.swift in Sources */,
+				B6D1AC502A57005A008E6444 /* AlertModifier.swift in Sources */,
+				B6E00C702A45E9E1003A7BB7 /* EmptyChildContent.swift in Sources */,
+				B6E00C692A45E9E1003A7BB7 /* SecondPresenter.swift in Sources */,
+				B6E00C6D2A45E9E1003A7BB7 /* EndView.swift in Sources */,
+				B6D1AC4E2A56FF23008E6444 /* TransitionDialog.swift in Sources */,
+				B6A73E7B2A5A4E6800E7FACD /* Sleeper.swift in Sources */,
+				B6E00C682A45E9E1003A7BB7 /* SecondContent.swift in Sources */,
+				B6E00C6E2A45E9E1003A7BB7 /* EndContent.swift in Sources */,
+				B69C4A472A6BFD3D00D568F8 /* ModalNodeState.swift in Sources */,
+				B6E00C762A45E9E1003A7BB7 /* DialogContent.swift in Sources */,
+				B6D1AC6E2A58D348008E6444 /* Once.swift in Sources */,
+				B6E00C652A45E9E1003A7BB7 /* FirstPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6343CA12A501C73008E077F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E00C2B2A45E97C003A7BB7 /* ModalArchitecture */;
+			targetProxy = B6343CA02A501C73008E077F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B6343CA22A501C73008E077F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.ModalArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ModalArchitecture";
+			};
+			name = Debug;
+		};
+		B6343CA32A501C73008E077F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.ModalArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ModalArchitecture";
+			};
+			name = Release;
+		};
+		B6E00C382A45E97D003A7BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6E00C392A45E97D003A7BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6E00C3B2A45E97D003A7BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModalArchitecture/Preview Content\"";
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.ModalArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6E00C3C2A45E97D003A7BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModalArchitecture/Preview Content\"";
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.ModalArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6343CA42A501C73008E077F /* Build configuration list for PBXNativeTarget "ModalArchitectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6343CA22A501C73008E077F /* Debug */,
+				B6343CA32A501C73008E077F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E00C272A45E97C003A7BB7 /* Build configuration list for PBXProject "ModalArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E00C382A45E97D003A7BB7 /* Debug */,
+				B6E00C392A45E97D003A7BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E00C3A2A45E97D003A7BB7 /* Build configuration list for PBXNativeTarget "ModalArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E00C3B2A45E97D003A7BB7 /* Debug */,
+				B6E00C3C2A45E97D003A7BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6E00C242A45E97C003A7BB7 /* Project object */;
+}
